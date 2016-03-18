@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Joshua Washke</title>
+  
+
+
+
+  <link href="../../../assets/styles.css" rel="stylesheet">
+  <link href="../../../assets/syntax.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="primary-header group">
+
+    <section class="container">
+      <h1 class="logo">
+        <a href="../../..">{ JW }</a>
+      </h1>
+      <nav class="nav primary-nav">
+        <a href="../../..">Home</a>
+        <a href="../../../about.html">About</a>
+        <a href="../../../resume.html">Resume</a>
+        <a href="../../../portfolio.html">Portfolio</a>
+      </nav>
+    </section>
+    <!-- <h3 class="tagline">Programming and stuff</h3> -->
+
+    <section class="hero">
+      <h2>Hi, I'm Josh</h2>
+      <p>I'm into making cool applications, learning new technologies, and readers like you.</p>
+    </section>
+    <nav class="social">
+      <ul>
+        <li><a href="https://github.com/jwashke"><i class="fa fa-github fa-inverse fa-3x fa-fw"></i></a></li>
+        <li><a href="https://twitter.com/jwashke"><i class="fa fa-twitter fa-inverse fa-3x fa-fw"></i></a></li>
+        <li><a href="mailto:jwashke@icloud.com"><i class="fa fa-envelope-o fa-inverse fa-3x fa-fw"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <article>
+
+
+<h1>My first blog post</h1>
+<p>March 17, 2016</p>
+<p>When I first I started learning Ruby I thought it was a very strange language. Not necessarily the syntax of the language itself but rather the cultural conventions surrounding it. Rubyists have a very distinct style of doing things and seems to adhere very strong to that style.</p>
+
+<p>I didn’t have any particular problems with the style, but rather had not experienced such a fervor in the other languages I had worked. Rubyists seems to stress very readable code, such that its almost always preferable for it to read as much as english as possible.</p>
+
+<p>A good example of this is a simple guard clause to check for nil. Coming from other language my instinct was to write this:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>foo(bar)
+  return if bar == nil
+end
+</code></pre>
+</div>
+
+<p>In Ruby I quickly had to adapt to change this to</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>foo(bar)
+  return if bar.nil?
+end
+</code></pre>
+</div>
+
+<p>Ultimately its a small difference but something about my personal style I had to change.</p>
+
+<h5 id="enumerables">Enumerables</h5>
+
+<p>Nothing demonstrates the ruby style like proper use of enumerables. When I first started learning I was resistant to them at first. The for and while loop were old friends, I was comfortable using them and didn’t see the need to memorize a giant handful of new loops.</p>
+
+<p>Learning map was a good example of the usefulness of ruby enumerables. It was more convient and readable to write a quick map method on an array rather then the old style with a for loop I would have written.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>y = []
+for x in array
+  y &lt;&lt; x * 2
+end
+</code></pre>
+</div>
+
+<p>I could appreciate the elegance and simplicity of cutting the above down to</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>y = x.map { |num| num * 2 }
+</code></pre>
+</div>
+
+<p>But it wasn’t until I learned Reduce that I began to see the light. Reduce showed me the power and simplicity of enumerables and now I somewhat dreading moving to other languages like javascript where I will no longer be able to feel thier warm embrace.</p>
+
+<p>Summing elements in an array is something I have found myself doing fairly frequently in programming. Previously I would have done so like this:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">foo</span>
+  <span class="nb">puts</span> <span class="s1">'foo'</span>
+<span class="k">end</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">	<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">for</span> <span class="n">x</span> <span class="k">in</span> <span class="n">array</span>
+	  <span class="n">total</span> <span class="o">+=</span> <span class="n">x</span>
+	<span class="k">end</span></code></pre></figure>
+
+<p>With reduce:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>array.reduce(0) { |num, sum| sum + num }
+</code></pre>
+</div>
+
+<p>which seems like a small change, but is in my mind a large improvement over the way I used to do it. The best part about enumerables is how readable they make your code. Whenever I looked at a loop before learning Ruby, I would have to strain a bit to find out what that particular loop is doing. Comments were often necessary to explain the generic loop structure and bad variables name such as x, y, and i.</p>
+
+<p>With Ruby I can look at a simple enumerable like reduce and know they they are probably summing a total of elements. Or I can look at sort_by and know they are sorting the array. Or I can look at select and instantly know they are creating a new array with elements that meet the block conditions.</p>
+
+<p>Working on our latest project Black Thursday has made me curse ruby somewhat. I know our 90 second test suite would run in a fraction of the time if it was coded in something like C++.</p>
+
+<p>But that curse is gone pretty quickly when I look at how readable and concise much of my code is because of the power of enumerables. I can step away from a long class and come back days later and easily reacquaint myself with is being done mostly just by reading what enumerables I used.</p>
+
+
+      </article>
+    </div>
+    <footer>
+        <nav class="nav footer-nav">
+          <a href="../../..">Home</a>
+          <a href="../../..">About</a>
+          <a href="../../..">Resume</a>
+          <a href="../../..">Portfolio</a>
+        </nav>
+  </footer><!--
+  --></body>
+</html>
+
