@@ -224,10 +224,6 @@ table {
 	Links
 	===============================================
 */
-	.primary-nav a {
-		padding: 3px;
-	}
-
 	.primary-nav,
 	a:hover {
 		color: #a9b2b9;
