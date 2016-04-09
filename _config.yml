@@ -1,3 +1,5 @@
 title: Joshua Washke
 email: jwashke@icloud.com
 highlighter: rouge
+
+gems: [bourbon, neat]
