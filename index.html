@@ -1,71 +1,24 @@
 ---
 layout: default
 ---
-<div class="container content-box">
 
-  <div class="row">
-    <div class="col-md-12">
-      <div class="hero">
-        <img src="{{base}}/assets/portraitbandw.jpg" class="img-circle center-block">
-        <h1>Hi, I'm <span id="hero-name">Josh</span>.</h1>
-<p>I'm a developer trying to make cool stuff and learn as much as I can.<br />
-        I'm into coding, dogs, and readers like you.</p>
-      </div>
-    </div>
-  </div>
+<div class="jumbotron">
+  <h1 class="">Hi, I'm <span class="name">Josh</span></h1>
+  <p class="lead">I am a developer trying to make cool things on the internet</p>
+  <p class="lead">I'm into dogs, learning new programming languages, and readers like you.</p>
 
-  <div class="row">
-
-    <div class="col-md-4">
-      <div class="link-card">
-        <!-- <img class="img-responsive" src="{{base}}/assets/code.png"> -->
-        <h5>Read My Blog</h5>
-        <hr>
-        <p>Sometimes I write about what I'm working on or learning.</p>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <button type="button" class="btn center-block btn-card btn-block">Blog</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="link-card">
-        <h5>Browse My Work</h5>
-        <hr>
-        <p>You can find the projects I've done here</p>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <button type="button" class="btn center-block btn-card btn-block">Portfolio</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="link-card">
-        <h5>Watch Me Code</h5>
-        <hr>
-        <p>Sometimes I record videos about programming.</p>
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <button type="button" class="btn center-block btn-card btn-block">Youtube</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
+  <a href="https://github.com/jwashke"><i class="fa fa-github fa-2x fa-fw"></i></a>
+  <a href="https://medium.com/@jwashke"><i class="fa fa-medium fa-2x fa-fw"></i></a>
+  <a href="mailto:jwashke@icloud.com"><i class="fa fa-envelope-o fa-2x fa-fw"></i></a>
 </div>
 
+<div class="row marketing">
 
-  <footer>
-
-  </footer>
-
-</body>
-</html>
+{% for post in site.posts %}
+<div class="col-lg-12">
+  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+  <h6>{{ post.date | date: "%m-%d-%Y" }}</h6>
+  {{ post.excerpt }}
+  <a href="{{ post.url }}">Read more...</a><br><br>
+</div>
+{% endfor %}
