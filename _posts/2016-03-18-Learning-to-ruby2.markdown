@@ -10,15 +10,19 @@ I didn't have any particular problems with the style, but rather had not experie
 
 A good example of this is a simple guard clause to check for nil. Coming from other language my instinct was to write this:
 
-	foo(bar)
-	  return if bar == nil
-	end
+{% highlight ruby %}
+def foo(bar)
+  return if bar == nil
+end
+{% endhighlight %}
 
 In Ruby I quickly had to adapt to change this to
 
-	foo(bar)
-	  return if bar.nil?
-	end
+{% highlight ruby %}
+def foo(bar)
+  return if bar.nil?
+end
+{% endhighlight %}
 
 Ultimately its a small difference but something about my personal style I had to change.
 
@@ -28,27 +32,35 @@ Nothing demonstrates the ruby style like proper use of enumerables. When I first
 
 Learning map was a good example of the usefulness of ruby enumerables. It was more convient and readable to write a quick map method on an array rather then the old style with a for loop I would have written.
 
-	y = []
-	for x in array
-	  y << x * 2
-	end
+{% highlight ruby %}
+y = []
+for x in array
+  y << x * 2
+end
+{% endhighlight %}
 
 I could appreciate the elegance and simplicity of cutting the above down to
 
-	y = x.map { |num| num * 2 }
+{% highlight ruby %}
+y = x.map { |num| num * 2 }
+{% endhighlight %}
 
 But it wasn't until I learned Reduce that I began to see the light. Reduce showed me the power and simplicity of enumerables and now I somewhat dreading moving to other languages like javascript where I will no longer be able to feel thier warm embrace.
 
 Summing elements in an array is something I have found myself doing fairly frequently in programming. Previously I would have done so like this:
 
-	total = 0
-	for x in array
-	  total += x
-	end
+{% highlight ruby %}
+total = 0
+for x in array
+  total += x
+end
+{% endhighlight %}
 
 With reduce:
 
-	array.reduce(0) { |num, sum| sum + num }
+{% highlight ruby %}
+  array.reduce(0) { |num, sum| sum + num }
+{% endhighlight %}
 
 which seems like a small change, but is in my mind a large improvement over the way I used to do it. The best part about enumerables is how readable they make your code. Whenever I looked at a loop before learning Ruby, I would have to strain a bit to find out what that particular loop is doing. Comments were often necessary to explain the generic loop structure and bad variables name such as x, y, and i.
 
