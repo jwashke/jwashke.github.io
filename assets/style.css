@@ -121,3 +121,42 @@ a:active {
   margin: 1rem 0 !important;
   background-color: #282828 !important;
 }
+
+.portfolio-img {
+  width: 140% !important;
+  margin-left: -20%;
+}
+
+.label-light-blue {
+  background-color: #5da2bf
+}
+
+.button-group {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0  0 1rem 0;
+  border-bottom: .05rem solid #5da2bf;
+}
+
+.btn-dark-blue {
+  color: #fff !important;
+  background-color: #093156 !important;
+}
+
+.btn-dark-blue:hover {
+  color: #fff !important;
+  background-color: #5da3bf !important;
+}
+
+.p-row {
+  margin: 1rem 0;
+}
+
+.project-name {
+  margin: 1rem;
+  color: #093156;
+}
+
+.overlay {
+   background: rgba(70, 72, 82, 0.3)
+}

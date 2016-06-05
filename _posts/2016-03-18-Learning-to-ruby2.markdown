@@ -58,8 +58,7 @@ end
 
 With reduce:
 
-{% highlight ruby %}
-  array.reduce(0) { |num, sum| sum + num }
+{% highlight ruby %}array.reduce(0) { |num, sum| sum + num }
 {% endhighlight %}
 
 which seems like a small change, but is in my mind a large improvement over the way I used to do it. The best part about enumerables is how readable they make your code. Whenever I looked at a loop before learning Ruby, I would have to strain a bit to find out what that particular loop is doing. Comments were often necessary to explain the generic loop structure and bad variables name such as x, y, and i.

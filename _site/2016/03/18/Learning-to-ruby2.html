@@ -22,10 +22,10 @@
             <nav>
               <ul class="nav nav-pills pull-xs-right">
                 <li class="nav-item">
-                  <a class="nav-link" href="https://medium.com/@jwashke">Blog</a>
+                  <a class="nav-link" href="/blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a class="nav-link" href="/portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="https://github.com/jwashke">Github</a>
@@ -82,7 +82,7 @@
 
 <p>With reduce:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">array</span><span class="p">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">num</span><span class="p">,</span> <span class="n">sum</span><span class="o">|</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">num</span> <span class="p">}</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">array</span><span class="p">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="o">|</span><span class="n">num</span><span class="p">,</span> <span class="n">sum</span><span class="o">|</span> <span class="n">sum</span> <span class="o">+</span> <span class="n">num</span> <span class="p">}</span></code></pre></figure>
 
 <p>which seems like a small change, but is in my mind a large improvement over the way I used to do it. The best part about enumerables is how readable they make your code. Whenever I looked at a loop before learning Ruby, I would have to strain a bit to find out what that particular loop is doing. Comments were often necessary to explain the generic loop structure and bad variables name such as x, y, and i.</p>
 
@@ -95,9 +95,12 @@
 
 
       <footer class="footer">
-        <p class="footer-links"><a href="https://github.com/jwashke"><i class="fa fa-github fa-2x fa-fw"></i></a>
+      <p class="footer-links">
+        <a href="https://github.com/jwashke"><i class="fa fa-github fa-2x fa-fw"></i></a>
         <a href="https://medium.com/@jwashke"><i class="fa fa-medium fa-2x fa-fw"></i></a>
-        <a href="mailto:jwashke@icloud.com"><i class="fa fa-envelope-o fa-2x fa-fw"></i></a></p>
+        <a href="mailto:jwashke@icloud.com"><i class="fa fa-envelope-o fa-2x fa-fw"></i></a>
+        <a href="https://www.linkedin.com/in/joshua-washke-251381102"><i class="fa fa-linkedin fa-2x fa-fw"></i></a>
+      </p>
       </footer>
         </div>
       <!--
