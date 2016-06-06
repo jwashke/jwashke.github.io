@@ -2,7 +2,6 @@
 layout: default
 ---
 <div class="col-md-12 portfolio-box">
-  <h3 class="project-name">Tiny Stay</h3>
   <div id="carousel-tiny-stay" class="carousel slide portfolio-img" data-ride="carousel" data-interval="false">
   <ol class="carousel-indicators">
     <li data-target="#carousel-tiny-stay" data-slide-to="0" class="active"></li>
@@ -29,15 +28,15 @@ layout: default
     <span class="icon-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-<div class="row p-row">
+
+<div class="carousel-caption">
+  <h3>Tiny Stay</h3>
   <p>A 3 person team project practicing brownfield development. We were given a codebase for a tool rental store, and pivoted it
-    into a mutlitenancy airbnb clone themed around tiny homes. Users can list their own homes on the site, upload multiple images, and make reservations
-    on the site. Some of the challenges were working with geocoding to enable searching homes based on address, city, state, or zip. Google maps integration.
-    And using a jquery datepicker that greys out dates based on previous reservations.
+    into a mutlitenancy airbnb clone themed around tiny homes.
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Brownfield Development</span>
     <span class="label label-pill label-light-blue">Multitenancy</span>
     <span class="label label-pill label-light-blue">Geocoding</span>
@@ -46,14 +45,14 @@ layout: default
   <div class="button-group">
   <a class="btn btn-dark-blue" href="https://github.com/patrickwhardy/the_pivot">Github</a>
     <a class="btn btn-dark-blue" href="http://tiny-stay.herokuapp.com">Heroku</a>
+  </div>
 </div>
 <div class="col-md-12 portfolio-box">
-  <h3 class="project-name">Which Twitch</h3>
-  <div id="carousel-tiny-stay" class="carousel slide portfolio-img" data-ride="carousel" data-interval="false">
+  <div id="carousel-twitch" class="carousel slide portfolio-img" data-ride="carousel" data-interval="false">
   <ol class="carousel-indicators">
-    <li data-target="#carousel-tiny-stay" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-tiny-stay" data-slide-to="1"></li>
-    <li data-target="#carousel-tiny-stay" data-slide-to="2"></li>
+    <li data-target="#carousel-twitch" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-twitch" data-slide-to="1"></li>
+    <li data-target="#carousel-twitch" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
@@ -67,20 +66,21 @@ layout: default
       <img src="/assets/images/twitch/games.png" alt="Third slide">
     </div>
   </div>
-  <a class="left carousel-control" href="#carousel-tiny-stay" role="button" data-slide="prev">
+  <a class="left carousel-control" href="#carousel-twitch" role="button" data-slide="prev">
     <span class="icon-prev" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel-tiny-stay" role="button" data-slide="next">
+  <a class="right carousel-control" href="#carousel-twitch" role="button" data-slide="next">
     <span class="icon-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-<div class="row p-row">
+<div class="carousel-caption">
+    <h3>Which Twitch</h3>
   <p>A short solo project recreating parts www.twitch.tv using their api. Users can log in with their twitch account, view live streams by game, view their followed streams, and follow or unfollow streams.
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Consuming API</span>
     <span class="label label-pill label-light-blue">Testing External API with VCR</span>
     <span class="label label-pill label-light-blue">OAuth</span>
@@ -89,15 +89,15 @@ layout: default
   <a class="btn btn-dark-blue" href="https://github.com/jwashke/which">Github</a>
     <a class="btn btn-dark-blue" href="http://which-twitch.herokuapp.com">Heroku</a>
 </div>
-</div>
 <div class="col-md-12 portfolio-box">
-  <h3 class="project-name">Rails Engine</h3>
     <img class="portfolio-img" src="/assets/images/engine.png"/>
-<div class="row p-row">
-  <p>A short solo project recreating the previous project black thursday as a API. Project reads sales data in from CSV's and provides access to that data and business intelligence about that data through an API interface
+<div class="carousel-caption">
+    <h3>Rails Engine</h3>
+  <p>A short solo project recreating the earlier project black thursday as a rails API. Project reads sales data in from CSV's and provides access to that data and business intelligence about that data through an API interface
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Building an API</span>
     <span class="label label-pill label-light-blue">Testing API with request specs</span>
     <span class="label label-pill label-light-blue">Active Record Queries</span>
@@ -107,7 +107,6 @@ layout: default
 </div>
 </div>
 <div class="col-md-12">
-  <h3 class="project-name">Digital Destination</h3>
   <div id="carousel-dd" class="carousel slide portfolio-img" data-ride="carousel" data-interval="false">
   <ol class="carousel-indicators">
     <li data-target="#carousel-dd" data-slide-to="0" class="active"></li>
@@ -133,14 +132,13 @@ layout: default
     <span class="icon-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-<div class="row p-row">
-  <p>A three person team project implementing an ecommerce site in Ruby on Rails. Admins can create items or categories, and manage user orders.
-     Admins can upload product images and digital goods to an AWS s3 server using paperclip. Users can create accounts or login with Github OAuth, add items to their cart, and checkout.
-     When an admin marks a user purchased order as completed, Active mailer emails the user with a download link for the digital product they purchased.
+<div class="carousel-caption">
+    <h3>Digital Destination</h3>
+  <p>A three person team project implementing an ecommerce site in Ruby on Rails. Digital Destination sells digital media and emails buyers an aws download link to the product upon purchase.
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Rails</span>
     <span class="label label-pill label-light-blue">Authentication</span>
     <span class="label label-pill label-light-blue">Authorization</span>
@@ -154,7 +152,6 @@ layout: default
 </div>
 </div>
 <div class="col-md-12">
-  <h3 class="project-name">Rush Hour</h3>
   <div id="carousel-rh" class="carousel slide portfolio-img" data-ride="carousel" data-interval="false">
   <ol class="carousel-indicators">
     <li data-target="#carousel-rh" data-slide-to="0" class="active"></li>
@@ -180,13 +177,14 @@ layout: default
     <span class="icon-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-<div class="row p-row">
+<div class="carousel-caption">
+    <h3>Rush Hour</h3>
   <p>A pair project where we implemented a very basic google analytics clone in sinatra with active record. The site would recieve a payload of data
     about a visit to a site, parse that data and then store it in the database. Active record then provides business intelligence about that data.
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Sinatra</span>
     <span class="label label-pill label-light-blue">Active Record</span>
     <span class="label label-pill label-light-blue">Authorization</span>
@@ -196,7 +194,6 @@ layout: default
 </div>
 </div>
 <div class="col-md-12">
-  <h3 class="project-name">Robot World</h3>
   <div id="carousel-rw" class="carousel slide portfolio-img" data-ride="carousel" data-interval="false">
   <ol class="carousel-indicators">
     <li data-target="#carousel-rw" data-slide-to="0" class="active"></li>
@@ -222,14 +219,15 @@ layout: default
     <span class="icon-next" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
-<div class="row p-row">
+<div class="carousel-caption">
+  <h3>Robot World</h3>
   <p>A solo project to implement my first database driven web application. Robot World is a sinatra app that hosts
     a repository of robots using an sqlite 3 database and the Sequel ORM for ruby. Users can perform basic CRUD functionality for a collection
     of robots.
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Sinatra</span>
     <span class="label label-pill label-light-blue">Web App basics</span>
     <span class="label label-pill label-light-blue">SQL</span>
@@ -239,15 +237,16 @@ layout: default
 </div>
 </div>
 <div class="col-md-12">
-  <h3 class="project-name">Black Thursday</h3>
   <img class="portfolio-img" src="/assets/images/black-thursday.png"/>
-  <div class="row p-row">
+  <div class="carousel-caption">
+  <h3>Black Thursday</h3>
   <p>A pair project where a partner and I implemented a rudimentary form of active record in ruby, before we knew what active record was.
      The project pulls in large amounts of data from CSV files and maps them to ruby objects, establishes relationships between them,
      and performs business intelligence queries on the object.
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Relational Database Design</span>
     <span class="label label-pill label-light-blue">Project Organization and Management</span>
     <span class="label label-pill label-light-blue">OOP Principles</span>
@@ -255,16 +254,16 @@ layout: default
   <div class="button-group">
   <a class="btn btn-dark-blue" href="https://github.com/jwashke/black_thursday">Github</a>
 </div>
-</div>
 <div class="col-md-12">
-  <h3 class="project-name">HTTP Server</h3>
   <img class="portfolio-img" src="/assets/images/server.png"/>
-  <div class="row p-row">
+  <div class="carousel-caption">
+  <h3>HTTP Server</h3>
   <p>A pair project where we implemented an http server in ruby using the ruby http library.
     Users can play a number guessing game or look up the definitions of words.
   </p>
 </div>
-  <h6>Learning Focus: </h6>
+</div>
+  <h6 class="p-row">Learning Focus: </h6>
   <p><span class="label label-pill label-light-blue">Web basics</span>
     <span class="label label-pill label-light-blue">HTTP Requests</span>
     <span class="label label-pill label-light-blue">HTTP Responses</span>
@@ -272,17 +271,17 @@ layout: default
   <div class="button-group">
   <a class="btn btn-dark-blue" href="https://github.com/marinacor1/HTTPYYKM">Github</a>
 </div>
-</div>
 <div class="col-md-12">
-  <h3 class="project-name">Battleship</h3>
   <img class="portfolio-img" src="/assets/images/gameplay.png"/>
-  <div class="row p-row">
+  <div class="carousel-caption">
+      <h3>Battleship</h3>
   <p>A solo project where I implemented a command line repl version of battleship.
      Players can play a game of battleship against a cpu on a 4x4 grid. This was an early
      ruby project where the focus was on making clean well organized code in one of my first larger projects.
   </p>
 </div>
-    <h6>Learning Focus: </h6>
+</div>
+    <h6 class="p-row">Learning Focus: </h6>
     <p><span class="label label-pill label-light-blue">REPL Interface</span>
       <span class="label label-pill label-light-blue">Project Organization</span>
       <span class="label label-pill label-light-blue">OOP Principles</span>
@@ -290,4 +289,3 @@ layout: default
     <div class="button-group">
     <a class="btn btn-dark-blue" href="https://github.com/jwashke/battleship">Github</a>
   </div>
-</div>

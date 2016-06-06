@@ -149,7 +149,7 @@ a:active {
 }
 
 .p-row {
-  margin: 1rem 0;
+  margin: 1rem 0 .5rem 0;
 }
 
 .project-name {
@@ -157,6 +157,25 @@ a:active {
   color: #093156;
 }
 
-.overlay {
-   background: rgba(70, 72, 82, 0.3)
-}
+.carousel-caption
+  {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    margin: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+  }
+
+  .carousel-caption p {
+    margin: 20px;
+  }
+
+  .portfolio-box {
+    margin: 1rem 0;
+  }
