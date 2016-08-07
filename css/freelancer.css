@@ -92,6 +92,9 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
+.img-border {
+  border: 2px solid #2C3E50 !important;
+}
 .success-name {
   color: #18BC9C !important;
 }
