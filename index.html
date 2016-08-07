@@ -308,7 +308,7 @@
 
     <!-- Portfolio Modals -->
 
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -320,19 +320,125 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Digital Destination</h2>
+                            <h2>Commissionrableio</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/digitaldestination.jpg" class="img-responsive img-centered" alt="">
-                            <p>A pair project where we implemented a very basic google analytics clone in sinatra with active record. The site would recieve a payload of data about a visit to a site, parse that data and then store it in the database. </p>
-                            <p>Active record then provides business intelligence about that data.</p>
-                            <h3><a href="https://github.com/jwashke/little_shop"><i class="fa fa-fw fa-github-alt"></i>Github</a></h3>
+                            <img src="img/portfolio/commissions.jpg" class="img-responsive img-centered" alt="">
+                            <p>A pair project built for Trelora, a flat free real estate company. The purpose was to build a website where users can view real estate commissions on homes for sale in the Denver area. Upon creating account, users can view a google map of the Denver area with markers representing houses for sale. Clicking on a marker reveals information about the house with a link to a show page where the user can see more information.</p>
+                            <p>My focus on this project was creating an api endpoint for the homes data, and creating the google maps page to consume that API and draw markers on the map based on the data received, along with filtering those markers using JQuery. I also created a background worker to handle processing an uploaded CSV file for admin users</p>
+                            <h3><a href="https://github.com/jwashke/commissions"><i class="fa fa-fw fa-github-alt"></i>Github</a></h3>
+                            <ul class="list-inline item-details">
+                                <li>Stack:
+                                    <strong>Ruby, Rails, RSpec, Active Record, PostgreSQL, JavaScript, JQuery, AJAX, Google Maps API
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>May 2016
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Which Twitch</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/which.jpg" class="img-responsive img-centered" alt="">
+                            <p>A short solo project recreating parts www.twitch.tv using their API.</p>
+                            <p>Users can log in with their twitch account, view live streams by game, view their followed streams, and follow or unfollow streams.</p>
+                            <h3><a href="https://github.com/jwashke/which"><i class="fa fa-fw fa-github-alt"></i>Github</a></h3>
+                            <ul class="list-inline item-details">
+                                <li>Stack:
+                                    <strong>Ruby, Rails, RSpec, Active Record, PostgreSQL
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>May 2016
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Tiny Stay</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/tinystay.jpg" class="img-responsive img-centered" alt="">
+                            <p>A 3 person team project practicing brownfield development. We were given a codebase for a tool rental store, and pivoted it into a mutlitenancy airbnb clone themed around tiny homes.</p>
+                            <h3><a href="https://github.com/jwashke/the_pivot"><i class="fa fa-fw fa-github-alt"></i>Github</a></h3>
+                            <ul class="list-inline item-details">
+                                <li>Stack:
+                                    <strong>Ruby, Rails, RSpec, Active Record, PostgreSQL, JavaScript, JQuery, Google Maps API
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong>May 2016
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Rails Engine</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/engine.jpg" class="img-responsive img-centered" alt="">
+                            <p>A short solo project recreating the earlier project black thursday as a rails API. Project reads sales data in from CSV's and provides access to that data and business intelligence about that data through an API interface</p>
+                            <h3><a href="https://github.com/jwashke/rails_engine"><i class="fa fa-fw fa-github-alt"></i>Github</a></h3>
                             <ul class="list-inline item-details">
                                 <li>Stack:
                                     <strong>Rails, Ruby, RSpec, Active Record, PostgreSQL
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong>March 2016
+                                    <strong>May 2016
                                     </strong>
                                 </li>
                             </ul>
@@ -368,7 +474,7 @@
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong>March 2016
+                                    <strong>April 2016
                                     </strong>
                                 </li>
                             </ul>
